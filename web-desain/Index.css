@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  margin: auto;
+}
+
+.navbar {
+  padding: 20px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu ul {
+  list-style-type: none;
+  display: flex;
+}
+.menu ul li a {
+  margin: 5px;
+  text-decoration: none;
+
+  color: rgb(116, 107, 107);
+  font-size: 12px;
+}
+h3 {
+  display: content;
+  color: rgb(255, 179, 0);
+  font-size: 12px;
+}
+h1 {
+  display: content;
+  color: rgb(6, 18, 111);
+  font-size: 40px;
+}
+ul {
+  font-size: 25px;
+}
+h2 {
+  display: contents;
+  color: rgb(6, 18, 111);
+  font-size: 15px;
+}
+.Pesat a {
+  background-color: rgb(241, 162, 4);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.Pesat a.putih {
+  color: white;
+}
+.Pesat a:hover {
+  background-color: rgb(12, 12, 144);
+  color: white;
+}
+.wkwk {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  color: rgb(255, 182, 12);
+  margin: 15px;
+}
+.hero {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.kanan img {
+  width: 100%;
+}
+.kiri {
+  width: 100%;
+  margin-top: 25px;
+  font-size: 20px;
+}
+h4 {
+  display: contents;
+  color: rgb(6, 18, 111);
+  font-size: 15px;
+}
+.Gambar {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.Gambar img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.btn2 {
+  background-color: rgb(255, 182, 12);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.Pesat a.putih {
+  color: white;
+}
+.Hi {
+  font-size: 58%;
+}
+.Jurusan {
+  background-color: rgb(255, 255, 255);
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.judul {
+  background-color: rgb(255, 183, 2);
+  padding: 10px;
+  border-radius: 8px;
+}
+.penutup {
+  background-color: rgb(2, 7, 60);
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.Jurusan .Tkj {
+  background-color: hsl(0, 12%, 94%);
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.Jurusan .Dkv {
+  background-color: lab(94.87% 0.34 0.11);
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.Jurusan .Rpl {
+  background-color: hsl(0, 6%, 93%);
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(8, 8, 82);
+}
+h5 {
+  text-align: center;
+  color: rgb(8, 8, 82);
+}
+.judul {
+  text-align: center;
+  color: rgb(8, 8, 82);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+.tittle {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 600px;
+}
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.filter-btn {
+  border: 1px solid #ccc;
+  background: none;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-weight: 500px;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #ff6b00;
+  color: #ffffff;
+  border-color: #ff6b00;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.foto {
+  width: 30%;
+  overflow: hidden;
+  border-radius: 12px;
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.foto img {
+  width: 100%;
+  height: 100%;
+}
+
+.foto:hover {
+  transform: scale(1.5);
+}
+.smk {
+  font-size: medium;
+}
+.video-wrapper .kanan2 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+}
+.video-wrapper iframe .kanan2 {
+  justify-content: center;
+  width: 700px;
+  height: 400px;
+  align-items: flex-end;
+  display: flex;
+  margin: 50px 0px 0px 0px;
+  border-radius: 6%;
+}
+
+.kanan2 iframe {
+  object-fit: contain;
+  border-radius: 5%;
+}
+.kiri2 {
+  flex: 0 0 480px;
+  max-width: 50%;
+}
+
+.kiri2 {
+  order: 0; /* pastikan di kiri */
+  flex: 1 1 420px; /* isi ruang yang tersisa */
+  min-width: 240px;
+}
+.kiri2 {
+  order: 1;
+  flex: 1 1 420px;
+}
+.kanan2 {
+  order: 1;
+  flex: 1 1 480px;
+}
+.kiri2 h3 {
+  font-size: 50px;
+}
+.kiri2 h1 {
+  font-size: 25px;
+}
+.div h3 {
+  color: rgb(3, 9, 81);
+}
+.video-wrapper iframe .kiri3 {
+  justify-content: center;
+  width: 700px;
+  height: 400px;
+  align-items: flex-end;
+  display: flex;
+  margin: 50px 0px 0px 0px;
+  border-radius: 6%;
+}
+.kiri3 iframe {
+  object-fit: contain;
+  border-radius: 5%;
+}
+.kanan3 h3 {
+  font-size: 50px;
+}
+.kanan3 h5 {
+  font-size: 13px;
+}
+.kanan3 {
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+.kanan3 {
+  flex: 0 0 480px;
+  max-width: 50%;
+}
+
+.kanan3 {
+  order: 0; /* pastikan di kiri */
+  flex: 1 1 420px; /* isi ruang yang tersisa */
+  min-width: 240px;
+}
+.kanan3{
+  order: 1;
+  flex: 1 1 420px;
+}

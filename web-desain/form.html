@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <style>
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+      *{
+            box-sizing: border-box;
+        }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: rgba(51, 98, 140, 0.531);
+      }
+      input[type="text"],select,textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        margin-top: 16px;
+        resize: vertical;
+        box-sizing: border-box;
+      }
+      input[type="submit"]:hover {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aqua;
+        color: aliceblue;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: brown;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3> contact Form </h3>
+            <form action="">
+                <label for="nama lengkap">Nama Lengkap</label><input type="text" id="nama_lengkap"
+                name="nama_lengkap" placeholder="Isikan nama lengkap anda ...."/>
+
+                <label for="Negara">Negara</label>
+                <select id="Negara" name="Negara">
+                    <option value="Australia">Australia</option>
+                    <option value="Israel ngentot">Israel ngentot</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Jepang">Jepang</option>
+                </select>
+                <input type="radio" id="bogor" name="Kota" value="bogor"/>
+                <label for="bogor">bogor</label><br />
+
+                <input type="radio" id="Makassar" name="Kota" value="Makassar"/>
+                <label for="Makassar">Makassar</label><br />
+
+                <input type="radio" id="yogyakarta" name="Kota" value="yogyakarta"/>
+                <label for="yogyakarta">yogyakarta</label><br />
+
+                <input type="checkbox" id="SMP" name="SMP" value="SMP"/>
+                <label for="SMP">SMP</label><br />
+
+                <input type="checkbox" id="SMA" name="SMA" value="SMA"/>
+                <label for="SMA">SMA</label><br />
+
+                <input type="checkbox" id="SMK" name="SMK" value="SMK"/>
+                <label for="SMK">SMK</label><br />
+
+                <label for="subject">subject</label>
+                <textarea
+                    id="subject"
+                    name="subject"
+                    placeholder="keterangan"
+                    style="height: 150px">
+                </textarea>
+               <input type="submit" value="kirim"/>
+            </form>
+    </div>
+</body>
+</html>

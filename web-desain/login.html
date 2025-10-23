@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in dan Recreate</title>
+     <style>
+    *{box-sizing:border-box;font-family:Arial, Helvetica, sans-serif}
+    body{margin:0;background:linear-gradient(135deg, rgb(255, 89, 238) 30%, white 77%); display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
+    .card{width:100%;max-width:420px;background:#fff;border-radius:12px;padding:28px;box-shadow:0 8px 30px rgba(0,0,0,0.08)}
+    h2{margin:0 0 8px;font-size:1.25rem;color:#111}
+    p.lead{margin:0 0 18px;color:#555;font-size:0.95rem}
+    label{display:block;font-size:0.85rem;margin-bottom:6px;color:#333}
+    input[type="email"],input[type="password"]{
+      width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;margin-bottom:12px;font-size:1rem;
+    }
+    .row{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+    .checkbox{display:flex;align-items:center;gap:8px}
+    button.submit{
+      width:100%;padding:11px 12px;background:#2563eb;color:#fff;border:0;border-radius:8px;font-size:1rem;cursor:pointer
+    }
+    .small{font-size:0.9rem;color:#2563eb;text-decoration:none}
+    .error{color:#b91c1c;font-size:0.9rem;display:none;margin-bottom:8px}
+    .pwd-toggle{background:transparent;border:0;color:#2563eb;cursor:pointer;padding:6px 8px;border-radius:6px}
+    .pwd-wrap{display:flex;gap:8px;align-items:center}
+    @media (max-width:480px){.card{padding:20px}}
+  </style>
+</head>
+<body>
+   <main class="card" aria-labelledby="loginTitle">
+    <h2 id="loginTitle">Log In</h2>
+    <p class="lead">Masukkan email dan kata sandi Anda.</p>
+
+    <form id="loginForm" action="#" method="post" novalidate>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="nama@contoh.com" required>
+      </div>
+
+      <div>
+        <label for="password">Kata sandi</label>
+        <div class="pwd-wrap">
+          <input id="password" name="password" type="password" placeholder="Masukkan kata sandi" required style="flex:1">
+          <button type="button" class="pwd-toggle" id="togglePwd" aria-label="Tampilkan kata sandi">T</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="checkbox"><input type="checkbox" id="remember" name="remember"> Ingat saya</label>
+        <a class="small" href="#" tabindex="0">Lupa kata sandi?</a>
+      </div>
+
+      <div class="error" id="errorMsg">Mohon isi email dan kata sandi yang valid.</div>
+
+      <button type="submit" class="submit">Masuk</button>
+
+      <div style="display:flex;justify-content:center;gap:12px;margin-top:14px">
+        <span style="color:#555;font-size:0.9rem">Belum punya akun?</span>
+        <a class="small" href="#">Daftar</a>
+      </div>
+    </form>
+  </main>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const email = document.getElementById('email');
+    const pwd = document.getElementById('password');
+    const err = document.getElementById('errorMsg');
+    const toggle = document.getElementById('togglePwd');
+
+    toggle.addEventListener('click', ()=> {
+      pwd.type = pwd.type === 'password' ? 'text' : 'password';
+      toggle.textContent = pwd.type === 'password' ? 'T' : 'S';
+    });
+
+    form.addEventListener('submit', e=>{
+      e.preventDefault();
+      err.style.display = 'none';
+      const validEmail = email.checkValidity();
+      const hasPwd = pwd.value.trim().length >= 6; // minimal 6 karakter
+      if(!validEmail || !hasPwd){
+        err.textContent = !validEmail ? 'Masukkan email yang valid.' : 'Kata sandi minimal 6 karakter.';
+        err.style.display = 'block';
+        return;
+      }
+      // TODO: ganti action="#" ke endpoint server Anda atau kirim via fetch
+      // contoh sederhana untuk demo:
+      alert('Form valid — siap dikirim ke server (demo).');
+      // form.submit();
+    });
+  </script>
+</body>
+</html>

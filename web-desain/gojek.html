@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      margin-top: 12%;
+    }
+
+    .swiper {
+      width: 120%;
+      height: 500px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50px;
+      filter: brightness(40%);
+    }
+    /* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  </style>
+</head>
+<body>
+     <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://media.istockphoto.com/id/1403080534/id/foto/sekelompok-anak-muda-berbicara-dan-menggunakan-telepon-di-kafe.jpg?s=612x612&w=0&k=20&c=M-Xy7av008uSGV3k7wNPSaCaT0m2JmfUf940Xcr8Ak8=" alt=""></div>
+      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1561525155-40a650192479?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1631" alt=""></div>
+      <div class="swiper-slide"><img src="https://media.istockphoto.com/id/1458708515/id/foto/wanita-asia-bekerja-sebagai-pengemudi-ojek-yang-memeriksa-pesanan-di-ponselnya.jpg?s=612x612&w=0&k=20&c=Pg5ZjtePVdh6hbhRjovSWllWaqgHGpSQ9uAxlxo8Paw=" alt=""></div>
+      <div class="swiper-slide"><img src="https://media.istockphoto.com/id/1458708515/id/foto/wanita-asia-bekerja-sebagai-pengemudi-ojek-yang-memeriksa-pesanan-di-ponselnya.jpg?s=612x612&w=0&k=20&c=Pg5ZjtePVdh6hbhRjovSWllWaqgHGpSQ9uAxlxo8Paw=" alt=""></div>
+    </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <div class="container">
+        <div class="bottom-left">Bottom Left</div>
+        <div class="top-left">Top Left</div>
+        <div class="top-right">Top Right</div>
+        <div class="bottom-right">Bottom Right</div>
+        <div class="centered">Centered</div>
+</div>
+</body>
+</html>

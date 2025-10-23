@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: "aidil1 ammar2 aidil3 ammar4";
+            grid-template-rows: 1fr;
+        }
+        .container .satu{
+            background-color: rgb(255, 0, 0);
+            grid-area: aidil1;
+            
+        }
+        .container .dua{
+            background-color: rgb(255, 255, 255);
+            grid-area: ammar2;
+        }
+
+        .container .tiga{
+            background-color: rgb(255, 1, 1);
+            grid-area: aidil3;
+        }
+        .container .empat{
+            background-color: rgb(255, 255, 255);
+            grid-area: ammar4;
+        }
+        .container2 {
+            display: grid;
+            grid-template-areas:
+                "bagian ammar2"
+                "bagian ammar4";
+        }
+        .container2 .bagian1{
+            grid-area: bagian1;
+            background-color: aliceblue;
+        }
+        .container2 .bagian2{
+            grid-area: bagian2;
+            background-color: aliceblue;
+        }
+        .container2 .bagian3{
+            grid-area: bagian3;
+            background-color: aliceblue;
+        }
+        .container2 .bagian4{
+            grid-area: bagian4;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="satu">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque distinctio ipsam laboriosam impedit voluptatum, laudantium in error consequatur? Soluta praesentium odio sed est. Eligendi ipsam, quos quibusdam nulla eos consectetur!
+        </div>
+        <div class="dua">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus a dolor nihil, nobis veniam porro. Mollitia atque sunt laudantium, unde dolorem labore eius facilis nisi, dicta voluptatem tenetur nulla illo?
+        </div>
+        <div class="tiga">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque expedita consectetur libero distinctio impedit perferendis, aut, magnam, dignissimos quod porro dicta. Iusto tempore praesentium perspiciatis quaerat est incidunt dolorum totam.
+        </div>
+        <div class="empat">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam autem, incidunt aspernatur sit unde necessitatibus laboriosam quo quidem voluptate laborum officia distinctio illo recusandae nesciunt cum, quas magni nemo?\
+        </div>
+
+                  
+                
+           
+       
+    </div>
+</body>
+</html>
